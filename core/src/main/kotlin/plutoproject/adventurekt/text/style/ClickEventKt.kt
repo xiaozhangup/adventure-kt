@@ -36,7 +36,7 @@ fun changePage(page: Int): WithStyle {
 }
 
 fun changePage(page: String): WithStyle {
-    return ClickEventWithStyle(ClickEvent.changePage(page))
+    return ClickEventWithStyle(ClickEvent.changePage(page.toInt()))
 }
 
 fun copyToClipboard(text: String): WithStyle {
@@ -51,7 +51,7 @@ fun callback(options: ClickCallback.Options, callback: (Audience) -> Unit): With
     return ClickEventWithStyle(ClickEvent.callback(callback, options))
 }
 
-internal class ClickEventWithStyle(val clickEvent: ClickEvent) : WithStyle {
+internal class ClickEventWithStyle(val clickEvent: ClickEvent<*>) : WithStyle {
     override fun with(
         holder: ComponentKt,
         original: Component

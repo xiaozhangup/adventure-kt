@@ -1,7 +1,7 @@
 [versions]
-adventrue = "4.23.0"
-paper = '1.21.6-R0.1-SNAPSHOT'
-velocity = "3.4.0-SNAPSHOT"
+adventrue = "5.1.1"
+paper = '26.2.build.47-alpha'
+velocity = "3.5.0-SNAPSHOT"
 
 [libraries]
 paper-api = { module = 'io.papermc.paper:paper-api', version.ref = 'paper' }

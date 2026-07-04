@@ -1,5 +1,5 @@
 plugins {
-    kotlin("jvm") version "2.0.10"
+    kotlin("jvm") version "2.3.20"
 }
 
 allprojects {
@@ -7,7 +7,7 @@ allprojects {
     apply(plugin = "java")
 
     group = "plutoproject.adventurekt"
-    version = "2.1.1"
+    version = "v3.0.0"
 
     repositories {
         mavenCentral()
@@ -24,5 +24,9 @@ allprojects {
         api(rootProject.libs.adventure.text.serializer.legacy)
         api(rootProject.libs.adventure.text.serializer.plain)
         api(rootProject.libs.adventure.text.serializer.ansi)
+    }
+
+    tasks.withType<Test>().configureEach {
+        failOnNoDiscoveredTests = false
     }
 }
