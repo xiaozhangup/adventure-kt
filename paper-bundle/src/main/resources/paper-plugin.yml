@@ -1,5 +1,5 @@
 name: AdventureKt
 main: plutoproject.adventurekt.paper.AdventureKt
-version: "2.1.1"
+version: "3.0.0"
 api-version: "1.19"
 loader: plutoproject.adventurekt.paper.loader.AdventureKtLibraryLoader

@@ -5,7 +5,7 @@ import com.velocitypowered.api.plugin.Plugin;
 @Plugin(
         id = "adventurekt",
         name = "AdventureKt",
-        version = "2.1.1",
+        version = "3.0.0",
         authors = "DeeChael"
 )
 public class AdventureKt {
