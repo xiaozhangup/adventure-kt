@@ -5,7 +5,7 @@ plugins {
 val adventureKtPlatform = providers.gradleProperty("adventureKtPlatform").getOrElse("paper")
 val adventureVersion = when (adventureKtPlatform) {
     "paper" -> "5.1.1"
-    "velocity" -> "4.26.1"
+    "velocity" -> "5.2.0"
     else -> error("Unsupported adventureKtPlatform: $adventureKtPlatform")
 }
 
