@@ -2,19 +2,14 @@ plugins {
     kotlin("jvm") version "2.3.20"
 }
 
-val adventureKtPlatform = providers.gradleProperty("adventureKtPlatform").getOrElse("paper")
-val adventureVersion = when (adventureKtPlatform) {
-    "paper" -> "5.1.1"
-    "velocity" -> "5.2.0"
-    else -> error("Unsupported adventureKtPlatform: $adventureKtPlatform")
-}
+val adventureVersion = "5.2.0"
 
 allprojects {
     apply(plugin = "org.jetbrains.kotlin.jvm")
     apply(plugin = "java")
 
     group = "plutoproject.adventurekt"
-    version = "v3.0.0-$adventureKtPlatform"
+    version = "v3.0.0"
 
     repositories {
         mavenCentral()

@@ -30,12 +30,10 @@ repositories {
 
 ```kotlin
 dependencies {
-    // Use shadowJar to shade the artifact into your jar
-    api("plutoproject.adventurekt:core:v3.0.0-paper")
-}
-
-tasks.shadowJar {
-    relocate("plutoproject.adventurekt", "com.example.libs.adventurekt")
+    // CarbKotlin provides this library at runtime.
+    compileOnly("plutoproject.adventurekt:core:v3.0.0") {
+        isTransitive = false
+    }
 }
 ```
 
